@@ -1,0 +1,13 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - pip install -r CatOrBird/requirements.txt
+#  build:
+#    commands:
+#      - python -m unittest discover -s my-api
+artifacts:
+  files:
+    - '**/*'
+  base-directory: CatOrBird
